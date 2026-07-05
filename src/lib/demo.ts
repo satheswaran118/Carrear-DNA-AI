@@ -1,0 +1,141 @@
+import type { CareerProfile, AgentResults } from "./types"
+
+export const demoProfile: CareerProfile = {
+  name: "Alex Chen",
+  title: "Full Stack Developer",
+  summary: "Passionate full-stack developer with 3 years of experience building scalable web applications using React, Node.js, and cloud technologies. Seeking to transition into an AI/ML Engineering role.",
+  skills: ["JavaScript", "TypeScript", "React", "Node.js", "Python", "SQL", "Git", "REST APIs", "CSS", "HTML"],
+  technologies: ["React", "Next.js", "Express", "PostgreSQL", "MongoDB", "AWS S3", "Docker", "Redux", "TailwindCSS"],
+  softSkills: ["Problem Solving", "Communication", "Team Collaboration", "Adaptability", "Critical Thinking"],
+  experience: [
+    {
+      company: "TechStartup Inc",
+      role: "Full Stack Developer",
+      duration: "2022 - Present",
+      highlights: ["Built 5 production React apps serving 50K+ users", "Reduced API response time by 40% through optimization", "Led team of 3 developers"],
+    },
+    {
+      company: "Digital Agency Co",
+      role: "Frontend Developer",
+      duration: "2021 - 2022",
+      highlights: ["Developed 15+ client websites", "Implemented CI/CD pipelines", "Mentored 2 junior developers"],
+    },
+  ],
+  education: [{ degree: "B.Sc. Computer Science", institution: "State University", year: "2021" }],
+  projects: [
+    { name: "E-Commerce Platform", description: "Full-stack platform with 10K+ products", technologies: ["React", "Node.js", "PostgreSQL"] },
+    { name: "Real-time Chat App", description: "WebSocket-based messaging application", technologies: ["React", "Socket.io", "MongoDB"] },
+  ],
+  achievements: ["Top 10% performer at TechStartup Inc", "Open source contributor with 500+ GitHub stars", "Hackathon winner 2023"],
+  yearsOfExperience: 3,
+  targetRole: "AI/ML Engineer",
+  targetSalary: "$150,000",
+  preferredCountry: "United States",
+  targetIndustry: "Technology",
+  skillScore: 72,
+  experienceScore: 65,
+  resumeQuality: 78,
+}
+
+export const demoResults: AgentResults = {
+  skillGap: {
+    targetRole: "AI/ML Engineer",
+    currentSkills: [
+      { skill: "Python", level: 70, category: "Programming" },
+      { skill: "JavaScript", level: 90, category: "Programming" },
+      { skill: "React", level: 88, category: "Frontend" },
+      { skill: "Node.js", level: 80, category: "Backend" },
+      { skill: "SQL", level: 72, category: "Database" },
+      { skill: "Docker", level: 55, category: "DevOps" },
+    ],
+    missingSkills: [
+      { skill: "Machine Learning", priority: "high", difficulty: "hard", timeToLearn: "3-4 months" },
+      { skill: "TensorFlow / PyTorch", priority: "high", difficulty: "hard", timeToLearn: "2-3 months" },
+      { skill: "Deep Learning", priority: "high", difficulty: "hard", timeToLearn: "3-4 months" },
+      { skill: "Data Science", priority: "high", difficulty: "medium", timeToLearn: "2-3 months" },
+      { skill: "NumPy / Pandas", priority: "medium", difficulty: "easy", timeToLearn: "3-4 weeks" },
+      { skill: "MLOps", priority: "medium", difficulty: "medium", timeToLearn: "1-2 months" },
+      { skill: "LLM APIs", priority: "medium", difficulty: "easy", timeToLearn: "2-3 weeks" },
+      { skill: "Vector Databases", priority: "low", difficulty: "medium", timeToLearn: "2-3 weeks" },
+    ],
+    weakAreas: ["Mathematics for ML", "Statistics", "Model Deployment", "Cloud ML Services"],
+    strengthAreas: ["Software Engineering", "API Development", "Frontend", "Problem Solving"],
+    overallReadiness: 45,
+    aiReadiness: 30,
+    interviewReadiness: 50,
+    portfolioStrength: 60,
+    careerHealth: 65,
+  },
+  careerAdvice: {
+    bestCareerPath: { title: "AI/ML Engineer", reason: "Strong programming background + growing AI market demand", salaryMin: 120000, salaryMax: 200000, growthRate: "25% YoY" },
+    alternativeCareerPaths: [
+      { title: "AI Product Manager", reason: "Combine technical background with product strategy", salaryMin: 110000, salaryMax: 175000, fitScore: 80 },
+      { title: "ML Platform Engineer", reason: "Leverage DevOps + Python skills for ML infrastructure", salaryMin: 130000, salaryMax: 190000, fitScore: 75 },
+      { title: "AI Solutions Architect", reason: "Bridge business and technical AI implementation", salaryMin: 140000, salaryMax: 210000, fitScore: 70 },
+    ],
+    salaryEstimate: { min: 120000, max: 200000, median: 155000, currency: "USD" },
+    industryDemand: "high",
+    remotePossibility: "high",
+    futureTrends: ["LLM Engineering", "Multimodal AI", "AI Agents", "Edge AI", "Responsible AI"],
+    timeToGoal: "9-12 months",
+    motivationalMessage: "Your full-stack background gives you a unique edge in AI development. Most ML engineers lack your software engineering depth.",
+  },
+  jobs: [
+    { company: "OpenAI", role: "AI Engineer", matchScore: 72, reason: "Strong Python + API skills align perfectly", salaryMin: 160000, salaryMax: 220000, requiredSkills: ["Python", "ML", "LLMs"], missingSkills: ["Deep Learning"], preparationTime: "6-9 months", remote: true, companyType: "startup", industry: "AI" },
+    { company: "Google DeepMind", role: "Research Engineer", matchScore: 58, reason: "Software engineering background valued", salaryMin: 170000, salaryMax: 250000, requiredSkills: ["Python", "TensorFlow", "ML Research"], missingSkills: ["ML", "Research Experience"], preparationTime: "12-18 months", remote: false, companyType: "enterprise", industry: "AI" },
+    { company: "Anthropic", role: "ML Engineer", matchScore: 65, reason: "Full-stack skills + Python foundation", salaryMin: 150000, salaryMax: 230000, requiredSkills: ["Python", "ML", "PyTorch"], missingSkills: ["Deep Learning"], preparationTime: "9-12 months", remote: true, companyType: "startup", industry: "AI" },
+    { company: "Hugging Face", role: "ML Engineer", matchScore: 70, reason: "Open source experience + Python skills", salaryMin: 130000, salaryMax: 190000, requiredSkills: ["Python", "Transformers", "NLP"], missingSkills: ["NLP", "Transformers"], preparationTime: "6-9 months", remote: true, companyType: "startup", industry: "AI" },
+  ],
+  interview: {
+    technical: [
+      { question: "Explain the difference between supervised and unsupervised learning.", hint: "Mention labeled vs unlabeled data", difficulty: "easy" },
+      { question: "How does backpropagation work in neural networks?", hint: "Discuss gradient descent and chain rule", difficulty: "medium" },
+      { question: "Design a recommendation system for an e-commerce platform.", hint: "Consider collaborative filtering, content-based filtering", difficulty: "hard" },
+    ],
+    behavioral: [
+      { question: "Tell me about a time you had to learn a new technology quickly.", framework: "STAR", tip: "Emphasize your learning process and outcome" },
+      { question: "Describe a challenging project and how you overcame obstacles.", framework: "STAR", tip: "Focus on problem-solving approach" },
+    ],
+    hr: [
+      { question: "Why do you want to transition to AI/ML?", bestAnswer: "Discuss genuine passion for AI, specific use cases that inspired you" },
+      { question: "Where do you see yourself in 5 years?", bestAnswer: "Show ambition aligned with the company's AI roadmap" },
+    ],
+    coding: [
+      { topic: "Array & String Manipulation", examples: ["Two Sum", "Valid Parentheses"], difficulty: "easy" },
+      { topic: "Dynamic Programming", examples: ["Longest Common Subsequence", "Knapsack"], difficulty: "medium" },
+    ],
+    systemDesign: [
+      { topic: "ML Pipeline Design", keyPoints: ["Data ingestion", "Feature engineering", "Model training", "Deployment", "Monitoring"] },
+      { topic: "Recommendation System", keyPoints: ["User-item matrix", "Collaborative filtering", "A/B testing", "Real-time serving"] },
+    ],
+    confidenceScore: 62,
+    preparationAdvice: "Focus on ML fundamentals first, then practice LeetCode medium problems daily.",
+  },
+  coaching: {
+    weeklyGoals: [
+      "Complete NumPy/Pandas fundamentals course",
+      "Build first ML project (house price prediction)",
+      "Practice 5 LeetCode problems",
+      "Read 2 AI research papers",
+      "Update LinkedIn with AI learning journey",
+    ],
+    dailyTasks: [
+      { day: "Monday", tasks: ["Study ML theory (1.5hrs)", "LeetCode practice (30min)", "Read documentation"] },
+      { day: "Tuesday", tasks: ["Hands-on coding project (2hrs)", "Watch ML YouTube tutorial", "Review notes"] },
+      { day: "Wednesday", tasks: ["Deep dive into PyTorch (1.5hrs)", "Build mini project", "Networking on LinkedIn"] },
+      { day: "Thursday", tasks: ["Practice interview questions (1hr)", "Study system design", "Code review"] },
+      { day: "Friday", tasks: ["Project work (2hrs)", "Read AI news/papers", "Plan next week"] },
+    ],
+    motivationalMessage: "Alex, your full-stack background is your secret weapon. While others are learning to code, you're learning to think like an AI engineer. Every line of ML code you write builds on 3 years of solid engineering foundations. Keep going!",
+    productivityTips: ["Use Pomodoro technique: 25min focus, 5min break", "Code first thing in the morning when energy is high", "Build projects alongside courses for retention"],
+    learningStrategy: "Follow a 70/30 rule: 70% hands-on projects, 30% theory. This will accelerate your learning and build a strong portfolio.",
+    timeManagement: ["Block 2-3 hours daily for deep learning", "Use weekends for larger projects", "Track progress weekly"],
+    mindsetAdvice: "Embrace being a beginner in ML. Your experience in software engineering will help you move faster than you think.",
+    milestones: [
+      { week: 1, goal: "Complete Python for ML basics" },
+      { week: 2, goal: "First ML model trained and evaluated" },
+      { week: 4, goal: "Complete first portfolio project" },
+    ],
+    successPrediction: "Based on your background and commitment, you have an 85% probability of landing an AI/ML role within 12 months.",
+  },
+}
